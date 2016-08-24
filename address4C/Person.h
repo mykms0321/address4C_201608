@@ -1,9 +1,11 @@
 #pragma once
+#include "common.h"
 class Person
 {
 public:
-	Person();
+	Person(char *, int);
 	~Person();
+	virtual char* ToString();
 protected:
 	char *name;
 	int year;
